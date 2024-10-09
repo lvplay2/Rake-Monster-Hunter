@@ -75,9 +75,6 @@ public class MonsterRake : Monster
 	protected float delayTimedAttack;
 
 	protected float lastTimedAttackTime;
-
-	private AdverController adver;
-
 	private bool isRunAwayNow;
 
 	private bool isAttackState;
@@ -108,7 +105,6 @@ public class MonsterRake : Monster
 
 	protected override void Start()
 	{
-		adver = AdverController.con;
 		lastTimedScreamTime = Time.time;
 		delayTimedScream = UnityEngine.Random.Range(minTimedScreamDelay, maxTimedScreamDelay);
 		lastTimedAttackTime = Time.time;
@@ -627,18 +623,6 @@ public class MonsterRake : Monster
 
 	private void FixedUpdate()
 	{
-		StateMachine.State currState = stateMachine.GetCurrState();
-		if (currState != null && (TargetInRadius(lookRange * 1.5f) || currState.id == "runToTarget" || currState.id == "attackTarget" || currState.id == "runAwayFromTarget" || currState.id == "frozen" || currState.id == "fastFindTarget"))
-		{
-			if ((bool)adver)
-			{
-				adver.WaitSeconds(10f);
-			}
-			else
-			{
-				Debug.LogError("no adver in MonsterRake!");
-			}
-		}
 		if (PlayerPrefs.GetInt("WatchBF") == 0)
 		{
 			if (Time.time > firstAttackAfter && !wasFirstAttack)
