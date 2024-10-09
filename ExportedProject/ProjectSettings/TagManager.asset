@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - pickupAble
+  - glass
+  - Explosion
+  - metal
+  - Manager
+  - LockCursor
+  - Missile
+  - WeaponCamera
+  - Laser
+  - Weapon
+  - Terrain
+  - FxTemporaire
+  - Fire
+  - Wood
+  - Water
+  - Tree
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Terrain
+  - Shootable
+  - ArmedItems
+  - PickUpItem
+  - MiniMapMark
+  - SkyBox
+  - ReceiveShadows
+  - CastShadows
+  - bushes
+  - PlayerHitBox
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Game/RakeMainMenu.unity
+    guid: 4ef47b299b21cf84ab36035362dbf750
+  - enabled: 1
+    path: Assets/Game/RakeGamePlay.unity
+    guid: f3a1ab46c360c05449d50718c23315c3
