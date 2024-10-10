@@ -51,11 +51,6 @@ public class MainMenuController : MonoBehaviour
 		PlayerPrefs.SetInt("WatchBF", 0);
 	}
 
-	public void ResetRewardedWideo()
-	{
-		AdverController.ResetRewardedVideo();
-	}
-
 	private MenuItem GetItem(string name)
 	{
 		MenuItem[] array = items;
