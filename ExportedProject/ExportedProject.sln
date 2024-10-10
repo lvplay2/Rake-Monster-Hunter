@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{5BB7E9B2-DAAC-E6A6-6D4C-F52FF86D00FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winrt", "winrt.csproj", "{8D5673B2-9922-6F78-B247-E758FAE458E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacuumShaders.TerrainToMesh", "VacuumShaders.TerrainToMesh.csproj", "{0AE6B364-39D9-453E-EE41-8FEB5AFA6A0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{5BB7E9B2-DAAC-E6A6-6D4C-F52FF86D00FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BB7E9B2-DAAC-E6A6-6D4C-F52FF86D00FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BB7E9B2-DAAC-E6A6-6D4C-F52FF86D00FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5673B2-9922-6F78-B247-E758FAE458E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5673B2-9922-6F78-B247-E758FAE458E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5673B2-9922-6F78-B247-E758FAE458E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5673B2-9922-6F78-B247-E758FAE458E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE6B364-39D9-453E-EE41-8FEB5AFA6A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE6B364-39D9-453E-EE41-8FEB5AFA6A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE6B364-39D9-453E-EE41-8FEB5AFA6A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE6B364-39D9-453E-EE41-8FEB5AFA6A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

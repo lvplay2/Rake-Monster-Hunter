@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: trrain
-  m_Shader: {fileID: 4800000, guid: ac30dcd95c2c1d448af0b4da7ba6a833, type: 3}
-  m_ShaderKeywords: 
+  m_Shader: {fileID: 4800000, guid: 64f1ddaeef26ddc47bbf2c953092094b, type: 3}
+  m_ShaderKeywords:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18,43 +18,43 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _V_T2M_Control:
-        m_Texture: {fileID: 2800000, guid: 062e338684a083d47b129cae6ebff2c0, type: 3}
+      _V_T2M_Control:
+        m_Texture: {fileID: 2800000, guid: 9db80c6342949be4f89462c4e37595a6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _V_T2M_Splat1:
-        m_Texture: {fileID: 2800000, guid: b59f6adddd061e04ca98c7201e92baf7, type: 3}
+      _V_T2M_Splat1:
+        m_Texture: {fileID: 2800000, guid: 9edcaf4b6c010084badfd70d022aeb1e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _V_T2M_Splat2:
-        m_Texture: {fileID: 2800000, guid: 4e7de62ce7431b246ad3bb003979d341, type: 3}
+      _V_T2M_Splat2:
+        m_Texture: {fileID: 2800000, guid: 25ef77704476b8f4188011bc0495ebe0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _V_T2M_Splat3:
-        m_Texture: {fileID: 2800000, guid: 31f41359a0e496b489607ab101f50ac9, type: 3}
+      _V_T2M_Splat3:
+        m_Texture: {fileID: 2800000, guid: 5358686e3f9490b4b9e6eb37e1334866, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _V_T2M_Lightmap_Multiplier: 1
-    - _V_T2M_Splat1_uvScale: 100
-    - _V_T2M_Splat2_uvScale: 100
-    - _V_T2M_Splat3_uvScale: 100
-    - _ZWrite: 1
+      _BumpScale: 1
+      _Cutoff: 0.5
+      _DetailNormalMapScale: 1
+      _DstBlend: 0
+      _GlossMapScale: 1
+      _Glossiness: 0.5
+      _GlossyReflections: 1
+      _Metallic: 0
+      _Mode: 0
+      _OcclusionStrength: 1
+      _Parallax: 0.02
+      _SmoothnessTextureChannel: 0
+      _SpecularHighlights: 1
+      _SrcBlend: 1
+      _UVSec: 0
+      _V_T2M_Lightmap_Multiplier: 1
+      _V_T2M_Splat1_uvScale: 100
+      _V_T2M_Splat2_uvScale: 100
+      _V_T2M_Splat3_uvScale: 100
+      _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _Color: {r: 1, g: 1, b: 1, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

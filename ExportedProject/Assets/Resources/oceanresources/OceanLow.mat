@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: OceanLow
-  m_Shader: {fileID: 4800000, guid: c40cb08454b56924087666921dbd6c84, type: 3}
-  m_ShaderKeywords: 
+  m_Shader: {fileID: 4800000, guid: f3ded9830dbb12d478a381873fb14a4a, type: 3}
+  m_ShaderKeywords:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18,37 +18,29 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _ShoreGray:
-        m_Texture: {fileID: 0}
+      _WaterTex:
+        m_Texture: {fileID: 2800000, guid: 9429b9b017ab40748879ba2221f977c4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _ShoreLineTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _WaterTex:
-        m_Texture: {fileID: 2800000, guid: a8201eab99c79a34d81c9f584da7b143, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _WaterTex2:
-        m_Texture: {fileID: 2800000, guid: 0f1440f9d59acc34dbe9b3108f628741, type: 3}
+      _WaterTex2:
+        m_Texture: {fileID: 2800000, guid: 63034213ce23d3344826347e9e4cba13, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Alpha: 0.5
-    - _Cutoff: 0.5
-    - _InvFade: 1
-    - _OceanHeight: 10240
-    - _OceanWidth: 10240
-    - _ReflectionIntensity: 0.3
-    - _ReflectionTint: 0.7850746
-    - _ShoreLineIntensity: 4.8
-    - _SpecularRatio: 156.26866
-    - _Tiling: 0.0083125
-    - _WaveSpeed: 0.34
+      _Alpha: 0.5
+      _Cutoff: 0.5
+      _InvFade: 1
+      _OceanHeight: 10240
+      _OceanWidth: 10240
+      _ReflectionIntensity: 0.3
+      _ReflectionTint: 0.7850746
+      _ShoreLineIntensity: 4.8
+      _SpecularRatio: 156.26866
+      _Tiling: 0.0083125
+      _WaveSpeed: 0.34
     m_Colors:
-    - _BottomColor: {r: 0.80597013, g: 0.9104478, b: 1, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ShoreLineColors: {r: 0.4, g: 0.4, b: 0.4, a: 1}
-    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _TopColor: {r: 0.21352196, g: 0.3155406, b: 0.4029851, a: 0}
+      _BottomColor: {r: 0.80597013, g: 0.9104478, b: 1, a: 0}
+      _Color: {r: 1, g: 1, b: 1, a: 1}
+      _ShoreLineColors: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+      _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      _TopColor: {r: 0.21352196, g: 0.3155406, b: 0.4029851, a: 0}

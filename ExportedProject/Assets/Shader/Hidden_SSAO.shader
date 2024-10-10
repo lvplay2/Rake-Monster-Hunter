@@ -4,26 +4,41 @@ Shader "Hidden/SSAO" {
 		_RandomTexture ("", 2D) = "" {}
 		_SSAO ("", 2D) = "" {}
 	}
-	//DummyShaderTextExporter
-	SubShader{
-		Tags { "RenderType"="Opaque" }
-		LOD 200
-		CGPROGRAM
-#pragma surface surf Standard
-#pragma target 3.0
-
-		sampler2D _MainTex;
-		struct Input
-		{
-			float2 uv_MainTex;
-		};
-
-		void surf(Input IN, inout SurfaceOutputStandard o)
-		{
-			fixed4 c = tex2D(_MainTex, IN.uv_MainTex);
-			o.Albedo = c.rgb;
-			o.Alpha = c.a;
+	SubShader {
+		Pass {
+			ZTest Always
+			ZWrite Off
+			Cull Off
+			GpuProgramID 13231
+			// No subprograms found
 		}
-		ENDCG
+		Pass {
+			ZTest Always
+			ZWrite Off
+			Cull Off
+			GpuProgramID 112671
+			// No subprograms found
+		}
+		Pass {
+			ZTest Always
+			ZWrite Off
+			Cull Off
+			GpuProgramID 174990
+			// No subprograms found
+		}
+		Pass {
+			ZTest Always
+			ZWrite Off
+			Cull Off
+			GpuProgramID 254315
+			// No subprograms found
+		}
+		Pass {
+			ZTest Always
+			ZWrite Off
+			Cull Off
+			GpuProgramID 318747
+			// No subprograms found
+		}
 	}
 }

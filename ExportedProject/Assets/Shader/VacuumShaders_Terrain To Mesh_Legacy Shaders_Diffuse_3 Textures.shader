@@ -1,6 +1,6 @@
 Shader "VacuumShaders/Terrain To Mesh/Legacy Shaders/Diffuse/3 Textures" {
 	Properties {
-		_Color ("Tint Color", Vector) = (1,1,1,1)
+		_Color ("Tint Color", Color) = (1,1,1,1)
 		_V_T2M_Control ("Control Map (RGBA)", 2D) = "black" {}
 		[V_T2M_Layer] _V_T2M_Splat1 ("Layer 1 (R)", 2D) = "white" {}
 		[HideInInspector] _V_T2M_Splat1_uvScale ("", Float) = 1
@@ -9,26 +9,55 @@ Shader "VacuumShaders/Terrain To Mesh/Legacy Shaders/Diffuse/3 Textures" {
 		[V_T2M_Layer] _V_T2M_Splat3 ("Layer 3 (B)", 2D) = "white" {}
 		[HideInInspector] _V_T2M_Splat3_uvScale ("", Float) = 1
 	}
-	//DummyShaderTextExporter
-	SubShader{
-		Tags { "RenderType"="Opaque" }
+	SubShader {
 		LOD 200
-		CGPROGRAM
-#pragma surface surf Standard
-#pragma target 3.0
-
-		fixed4 _Color;
-		struct Input
-		{
-			float2 uv_MainTex;
-		};
-		
-		void surf(Input IN, inout SurfaceOutputStandard o)
-		{
-			o.Albedo = _Color.rgb;
-			o.Alpha = _Color.a;
+		Tags { "RenderType" = "Opaque" }
+		Pass {
+			Name "FORWARD"
+			LOD 200
+			Tags { "LIGHTMODE" = "FORWARDBASE" "RenderType" = "Opaque" "SHADOWSUPPORT" = "true" }
+			GpuProgramID 19731
+			// No subprograms found
 		}
-		ENDCG
+		Pass {
+			Name "FORWARD"
+			LOD 200
+			Tags { "LIGHTMODE" = "FORWARDADD" "RenderType" = "Opaque" }
+			Blend One One, One One
+			ZWrite Off
+			GpuProgramID 118260
+			// No subprograms found
+		}
+		Pass {
+			Name "PREPASS"
+			LOD 200
+			Tags { "LIGHTMODE" = "PREPASSBASE" "RenderType" = "Opaque" }
+			GpuProgramID 157236
+			// No subprograms found
+		}
+		Pass {
+			Name "PREPASS"
+			LOD 200
+			Tags { "LIGHTMODE" = "PREPASSFINAL" "RenderType" = "Opaque" }
+			ZWrite Off
+			GpuProgramID 258825
+			// No subprograms found
+		}
+		Pass {
+			Name "DEFERRED"
+			LOD 200
+			Tags { "LIGHTMODE" = "DEFERRED" "RenderType" = "Opaque" }
+			GpuProgramID 284091
+			// No subprograms found
+		}
+		Pass {
+			Name "META"
+			LOD 200
+			Tags { "LIGHTMODE" = "META" "RenderType" = "Opaque" }
+			Cull Off
+			GpuProgramID 355172
+			// No subprograms found
+		}
 	}
 	Fallback "Legacy Shaders/Diffuse"
 }

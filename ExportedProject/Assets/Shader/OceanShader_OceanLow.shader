@@ -6,27 +6,55 @@ Shader "OceanShader/OceanLow" {
 		_WaveSpeed ("Wave Speed", Float) = 0.4
 		_ReflectionIntensity ("Reflection Intensity", Range(0, 1)) = 0.1
 		_SpecularRatio ("Specular Ratio", Range(10, 500)) = 200
-		_BottomColor ("Bottom Color", Vector) = (0,0,0,0)
-		_TopColor ("Top Color", Vector) = (0,0,0,0)
+		_BottomColor ("Bottom Color", Color) = (0,0,0,0)
+		_TopColor ("Top Color", Color) = (0,0,0,0)
 	}
-	//DummyShaderTextExporter
-	SubShader{
-		Tags { "RenderType" = "Opaque" }
-		LOD 200
-		CGPROGRAM
-#pragma surface surf Standard
-#pragma target 3.0
-
-		struct Input
-		{
-			float2 uv_MainTex;
-		};
-
-		void surf(Input IN, inout SurfaceOutputStandard o)
-		{
-			o.Albedo = 1;
+	SubShader {
+		LOD 250
+		Tags { "IGNOREPROJECTOR" = "true" "LIGHTMODE" = "FORWARDBASE" "QUEUE" = "Transparent-200" "RenderType" = "Transparent" }
+		Pass {
+			LOD 250
+			Tags { "IGNOREPROJECTOR" = "true" "LIGHTMODE" = "FORWARDBASE" "QUEUE" = "Transparent-200" "RenderType" = "Transparent" }
+			Blend SrcAlpha OneMinusSrcAlpha, SrcAlpha OneMinusSrcAlpha
+			Lighting On
+			GpuProgramID 1950
+			// No subprograms found
 		}
-		ENDCG
+	}
+	SubShader {
+		LOD 200
+		Tags { "IGNOREPROJECTOR" = "true" "LIGHTMODE" = "FORWARDBASE" "QUEUE" = "Geometry" "RenderType" = "Opaque" }
+		Pass {
+			LOD 200
+			Tags { "IGNOREPROJECTOR" = "true" "LIGHTMODE" = "FORWARDBASE" "QUEUE" = "Geometry" "RenderType" = "Opaque" }
+			Lighting On
+			GpuProgramID 88058
+			// No subprograms found
+		}
+	}
+	SubShader {
+		LOD 150
+		Tags { "IGNOREPROJECTOR" = "true" "LIGHTMODE" = "FORWARDBASE" "QUEUE" = "Transparent-200" "RenderType" = "Transparent" }
+		Pass {
+			LOD 150
+			Tags { "IGNOREPROJECTOR" = "true" "LIGHTMODE" = "FORWARDBASE" "QUEUE" = "Transparent-200" "RenderType" = "Transparent" }
+			Blend SrcAlpha OneMinusSrcAlpha, SrcAlpha OneMinusSrcAlpha
+			ZWrite Off
+			Lighting On
+			GpuProgramID 157153
+			// No subprograms found
+		}
+	}
+	SubShader {
+		LOD 100
+		Tags { "IGNOREPROJECTOR" = "true" "LIGHTMODE" = "FORWARDBASE" "QUEUE" = "Geometry" "RenderType" = "Opaque" }
+		Pass {
+			LOD 100
+			Tags { "IGNOREPROJECTOR" = "true" "LIGHTMODE" = "FORWARDBASE" "QUEUE" = "Geometry" "RenderType" = "Opaque" }
+			Lighting On
+			GpuProgramID 255363
+			// No subprograms found
+		}
 	}
 	Fallback "Diffuse"
 }

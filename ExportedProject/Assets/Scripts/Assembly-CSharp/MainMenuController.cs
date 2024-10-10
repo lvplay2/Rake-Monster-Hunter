@@ -37,7 +37,9 @@ public class MainMenuController : MonoBehaviour
 	public string currItemName;
 
 	public MenuItem[] items;
-	
+
+	public RateUs rateUs;
+
 	public string GamePlayScene = "GamePlay";
 
 	private bool isBusy;
@@ -47,6 +49,11 @@ public class MainMenuController : MonoBehaviour
 	public void ResetWatchBF()
 	{
 		PlayerPrefs.SetInt("WatchBF", 0);
+	}
+
+	public void ResetRewardedWideo()
+	{
+		AdverController.ResetRewardedVideo();
 	}
 
 	private MenuItem GetItem(string name)
@@ -65,6 +72,7 @@ public class MainMenuController : MonoBehaviour
 	private void Start()
 	{
 		Debug.Log("MainMenu.Start()");
+		Invoke("ShowRateUs_Later", 0f);
 		MenuItem[] array = items;
 		foreach (MenuItem menuItem in array)
 		{
@@ -84,6 +92,7 @@ public class MainMenuController : MonoBehaviour
 		}
 		curr.Show();
 	}
+
 	public void OnClickMenuItem(string name)
 	{
 		MenuItem[] array = items;
