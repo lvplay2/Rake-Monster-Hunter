@@ -154,6 +154,7 @@ public class Player : Creature
 		inGameUI.SetActive(false);
 		SetHeadToFall();
 		Invoke("DisablePlayer", 0.2f);
+		GameObject gameObject = gameOverUI.transform.Find("RakeKilledYou").Find("RakeKilledYou").gameObject;
 		GameObject gameObject = gameOverUI.transform.Find("buttons").Find("btnRetry").gameObject;
 		if (numberOfRessurections < 1)
 		{
