@@ -154,17 +154,14 @@ public class Player : Creature
 		inGameUI.SetActive(false);
 		SetHeadToFall();
 		Invoke("DisablePlayer", 0.2f);
-		GameObject gameObject = gameOverUI.transform.Find("buttons").Find("btnRessurection").gameObject;
-		GameObject gameObject2 = gameOverUI.transform.Find("WatchVideo").gameObject;
+		GameObject gameObject = gameOverUI.transform.Find("buttons").Find("btnRetry").gameObject;
 		if (numberOfRessurections < 1)
 		{
 			gameObject.SetActive(true);
-			gameObject2.SetActive(true);
 		}
 		else
 		{
 			gameObject.SetActive(false);
-			gameObject2.SetActive(false);
 		}
 		gameOverUI.transform.Find("buttons").Find("btnMainMenu").gameObject.SetActive(false);
 		Invoke("ShowGameOverMenu", 5f);

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Game/RakeMainMenu.unity
+- path: Assets/Game/RakeGamePlay.unity
   isLoaded: 1
   isActive: 1

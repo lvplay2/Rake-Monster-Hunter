@@ -38,7 +38,6 @@ public class MainMenuController : MonoBehaviour
 
 	public MenuItem[] items;
 
-	public RateUs rateUs;
 
 	public string GamePlayScene = "GamePlay";
 
