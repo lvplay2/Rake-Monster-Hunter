@@ -1,2 +1,14 @@
 Base path: G:/Unity Hub/Editor/2017.4.40f1/Editor/Data
 Cmd: initializeCompiler
+Cmd: preprocess
+  insize=1842 outsize=1842 ok=1
+Cmd: preprocess
+  insize=1666 outsize=1666 ok=1
+Cmd: preprocess
+  insize=2296 outsize=2296 ok=1
+Cmd: preprocess
+  insize=1209 outsize=1209 ok=1
+Cmd: preprocess
+  insize=668 outsize=668 ok=1
+Cmd: preprocess
+  insize=2042 outsize=2042 ok=1

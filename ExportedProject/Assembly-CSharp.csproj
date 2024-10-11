@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Difficult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\DifficultButtonScript.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\DifficultLevel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DifficultLevelChecker.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\EnvirometSettings.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\FlashLightUsing.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Footsteps.cs" />
@@ -350,10 +351,10 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{BC3C38AE-ED04-B288-BA63-7F92E64B03B8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="winrt.csproj">
-      <Project>{8D5673B2-9922-6F78-B247-E758FAE458E1}</Project>      <Name>winrt</Name>    </ProjectReference>
     <ProjectReference Include="VacuumShaders.TerrainToMesh.csproj">
       <Project>{0AE6B364-39D9-453E-EE41-8FEB5AFA6A0E}</Project>      <Name>VacuumShaders.TerrainToMesh</Name>    </ProjectReference>
+    <ProjectReference Include="winrt.csproj">
+      <Project>{8D5673B2-9922-6F78-B247-E758FAE458E1}</Project>      <Name>winrt</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

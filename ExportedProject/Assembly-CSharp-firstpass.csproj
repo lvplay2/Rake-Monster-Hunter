@@ -338,10 +338,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="winrt.csproj">
-      <Project>{8D5673B2-9922-6F78-B247-E758FAE458E1}</Project>      <Name>winrt</Name>    </ProjectReference>
     <ProjectReference Include="VacuumShaders.TerrainToMesh.csproj">
       <Project>{0AE6B364-39D9-453E-EE41-8FEB5AFA6A0E}</Project>      <Name>VacuumShaders.TerrainToMesh</Name>    </ProjectReference>
+    <ProjectReference Include="winrt.csproj">
+      <Project>{8D5673B2-9922-6F78-B247-E758FAE458E1}</Project>      <Name>winrt</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
